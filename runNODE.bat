@@ -1,0 +1,1 @@
+java -Dwebdriver.chrome.driver="drivers\windows\chromedriver.exe" -Dwebdriver.gecko.driver="drivers\windows\geckodriver.exe" -jar seleniumGrid\hub\selenium-server-4.0.0-beta-3.jar node

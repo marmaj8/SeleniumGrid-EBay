@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="eBay Automated Tests">
+    <listeners>
+        <listener class-name="eBay.listeners.TestResultsListener" />
+        <listener class-name="eBay.listeners.TestReporter" />
+    </listeners>
+    <test name="Allure Reports Chrome">
+        <parameter name="browserName" value="Chrome" />
+        <parameter name="mode" value="Grid" />
+        <classes>
+            <class name="eBay.SearchTest" />
+            <class name="eBay.CartTest" />
+        </classes>
+    </test>
+    <test name="Allure Reports FireFox">
+        <parameter name="browserName" value="Firefox" />
+        <parameter name="mode" value="Grid" />
+        <classes>
+            <class name="eBay.SearchTest" />
+            <class name="eBay.CartTest" />
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
